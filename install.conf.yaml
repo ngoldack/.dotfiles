@@ -2,6 +2,7 @@
     link:
       create: true
       relink: true
+      glob: true
     shell:
       stderr: true
 #      stdout: true
@@ -21,7 +22,6 @@
     ~/.p10k.zsh: 
       force: true
       path: shell/.p10k.zsh
-
     ~/.antigen/antigen.zsh: antigen/bin/antigen.zsh
 
     # Editor related
