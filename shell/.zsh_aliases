@@ -1,0 +1,15 @@
+## Common alias
+
+alias sudo="sudo " # Hack, for sudo an aliases
+
+alias ..='cd ..'
+alias ...='cd ../..'
+
+alias ls="ls --color"
+alias l="ls -lh --color"
+alias ll="ls -lh --color"
+alias lla="ll -a --color"
+
+## Zsh alias
+alias zshconfig="vim ~/.zshrc"
+alias reloadzsh="source ~/.zshrc"

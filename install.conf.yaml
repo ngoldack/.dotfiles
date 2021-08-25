@@ -1,0 +1,36 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+    shell:
+      stderr: true
+#      stdout: true
+
+- clean: ['~']
+
+- shell:
+    - [sh pre-install.sh, Running pre installation script]
+    - [mkdir -p ~/.vim/bundle, Creating vim bundle folder]
+
+- link:
+    # Shell related
+    ~/.zshrc:
+      force: true
+      path: shell/.zshrc
+    ~/.zshrc_aliases: shell/.zsh_aliases
+    ~/.p10k.zsh: 
+      force: true
+      path: shell/.p10k.zsh
+
+    ~/.antigen/antigen.zsh: antigen/bin/antigen.zsh
+
+    # Editor related
+    ~/.vimrc:
+      force: true
+      path: editor/.vimrc
+    ~/.vim/bundle/Vundle.vim: Vundle.vim
+
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - [vim +PluginInstall +qall < /dev/tty > /dev/tty, Installing Vim Plugins]
+    - [sh fonts/install.sh, Installing Powerline fonts]
