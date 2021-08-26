@@ -13,3 +13,5 @@ alias lla="ll -a --color"
 ## Zsh alias
 alias zshconfig="vim ~/.zshrc"
 alias reloadzsh="source ~/.zshrc"
+
+alias nf="neofetch"
