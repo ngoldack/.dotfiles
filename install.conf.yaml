@@ -18,7 +18,7 @@
     ~/.zshrc:
       force: true
       path: shell/.zshrc
-    ~/.zshrc_aliases: shell/.zsh_aliases
+    ~/.zsh_aliases: shell/.zsh_aliases
     ~/.p10k.zsh: 
       force: true
       path: shell/.p10k.zsh
