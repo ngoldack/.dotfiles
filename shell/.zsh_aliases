@@ -5,10 +5,18 @@ alias sudo="sudo " # Hack, for sudo an aliases
 alias ..='cd ..'
 alias ...='cd ../..'
 
-alias ls="ls --color"
-alias l="ls -lh --color"
-alias ll="ls -lh --color"
-alias lla="ll -a --color"
+if ! type "$colorls" > /dev/null; then
+	alias ls="colorls"
+	alias l="colorls -lh"
+	alias la="colorls -la"
+	alias ll="colorls -lh"
+	alias lla="colorls -lah"
+else
+	alias ls="ls --color"
+	alias l="ls -lh --color"
+	alias ll="ls -lh --color"
+	alias lla="ll -a --color"
+fi
 
 ## Zsh alias
 alias zshconfig="vim ~/.zshrc"
