@@ -8,7 +8,7 @@ alias ...='cd ../..'
 if ! type "$colorls" > /dev/null; then
 	alias ls="colorls"
 	alias l="colorls -lh"
-	alias la="colorls -la"
+	alias la="colorls -a"
 	alias ll="colorls -lh"
 	alias lla="colorls -lah"
 else
@@ -23,3 +23,10 @@ alias zshconfig="vim ~/.zshrc"
 alias reloadzsh="source ~/.zshrc"
 
 alias nf="neofetch"
+
+alias zsh-reload="source ~/.zsh_aliases & source ~/.zshrc"
+
+## Git alias
+
+alias gflow="git-flow"
+
