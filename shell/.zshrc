@@ -19,9 +19,11 @@ antigen bundle web-search
 antigen bundle git
 antigen bundle git-extras
 antigen bundle git-flow
+antigen bundle golang
 
 # System 
 antigen bundle firewalld
+antigen bundle ufw
 
 # Zsh.
 antigen bundle zsh-users/zsh-autosuggestions

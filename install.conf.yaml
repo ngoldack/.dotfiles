@@ -31,6 +31,6 @@
     ~/.vim/bundle/Vundle.vim: Vundle.vim
 
 - shell:
-    - [vim +PluginInstall +qall < /dev/tty > /dev/tty, Installing Vim Plugins]
+    - [vim +PluginInstall +qall, Installing Vim Plugins]
     - [sh fonts/install.sh, Installing Powerline fonts]
     - [sh post-install.sh, Running post installation script]
