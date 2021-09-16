@@ -30,6 +30,10 @@
       path: editor/.vimrc
     ~/.vim/bundle/Vundle.vim: Vundle.vim
 
+    # Git related
+    ~/.gitconfig:
+      force: true
+      path: git/.gitconfig
 - shell:
     - [vim +PluginInstall +qall, Installing Vim Plugins]
     - [sh fonts/install.sh, Installing Powerline fonts]

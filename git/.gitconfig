@@ -1,13 +1,6 @@
-[filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
 [user]
 	email = nicolas-goldack@live.de
-	name = Nicolas Goldack
-[credential]
-	helper = store
-
-[alias]
-  tree = log --pretty=oneline --graph --all --decorate
+	name = ngoldack
